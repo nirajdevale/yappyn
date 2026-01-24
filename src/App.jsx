@@ -1,5 +1,7 @@
 ﻿import { useEffect, useState } from 'react';
 import { Menu, X, ArrowRight, Check } from 'lucide-react';
+import logo from "./assets/yappyncrop.png";
+import bgImage from "./assets/bgimage.png";
 
 export default function App() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -28,11 +30,7 @@ export default function App() {
                     <div className="flex justify-between items-center py-4">
                         {/* Logo */}
                         <div className="flex items-center">
-                            <img
-                                src="/assets/yappyncrop.png"
-                                alt="YAPPYN Logo"
-                                className="h-12 w-auto"
-                            />
+                            <img src={logo} alt="YAPPYN Logo" className="h-12 w-auto" />
                         </div>
 
                         {/* Desktop Navigation */}
@@ -84,11 +82,7 @@ export default function App() {
             <section className="relative min-h-screen flex items-center pt-20">
                 {/* Background Image */}
                 <div className="absolute inset-0">
-                    <img
-                        src="/assets/bgimage.png"
-                        alt="Hero Background"
-                        className="w-full h-full object-cover"
-                    />
+                    <img src={bgImage} alt="Hero Background" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-black/20"></div>
                 </div>
 
@@ -705,17 +699,18 @@ export default function App() {
                 <div className="max-w-7xl mx-auto">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                         <div className="flex items-center">
-                            <img
-                                src="/assets/yappyncrop.png"
-                                alt="YAPPYN Logo"
-                                className="h-12 w-auto"
-                            />
+                            <img src={logo} alt="YAPPYN Logo" className="h-12 w-auto" />
                         </div>
 
                         <div className="flex items-center gap-8 text-sm text-gray-500">
                             <span>Operations Consulting</span>
                             <span>•</span>
-                            <a href="#" className="hover:text-white transition-colors">
+                            <a
+                                href="https://www.termsfeed.com/live/33ea9e03-f2ee-4515-ad83-4ffb377ef919"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:text-white transition-colors"
+                            >
                                 Privacy Policy
                             </a>
                             <span>•</span>
